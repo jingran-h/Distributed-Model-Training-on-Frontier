@@ -1,4 +1,4 @@
-# Distributed-Modelling-Training-on-Frontier
+# Distributed-Model-Training-on-Frontier
 
 This repository contains a supervised fine-tuning (SFT) walkthrough for running LoRA-based training of Meta-Llama-3 on ORNL's Frontier. The instructions below assume you have been granted access to Frontier, an approved Hugging Face token for the model, and sufficient scratch space.
 
