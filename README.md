@@ -226,8 +226,6 @@ Point downstream inference scripts at `results_modified/checkpoint-63` (or which
 ## 7. Troubleshooting
 
 - **DeepSpeed complains about missing ROCm/CUDA:** Re-run the module loads and regenerate `~/.deepspeed_env` so worker nodes inherit `ROCM_HOME`, `PATH`, and `LD_LIBRARY_PATH`.
-- **Dataset download retries during training:** Make sure the Arrow file exists in `$SCRATCH_ROOT/data_cache/mlabonne___guanaco-llama2-1k/.../guanaco-llama2-1k-train.arrow` and keep `HF_*_OFFLINE=1` set.
-- **`torch_dtype` deprecation messages:** The scripts already use the new `dtype=` argument. If you customize the loading code, continue to use `dtype=torch.float16`.
 - **Space constraints:** The Meta-Llama-3-8B snapshot requires ~15 GB. Verify quota before downloading.
 
 Following the steps in this tutorial gives you a reproducible SFT workflow on Frontier without relying on user-specific paths or live network connectivity during the batch job. Adjust hyperparameters in `sft_llama_ds.py` to experiment with longer runs, different datasets, or alternative LoRA settings.
