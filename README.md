@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Distributed-Modelling-Training-on-Frontier
 A hands-on tutorial for running distributed training on ORNL’s Frontier.
 =======
@@ -235,4 +234,3 @@ Point downstream inference scripts at `results_modified/checkpoint-63` (or which
 - **Space constraints:** The Meta-Llama-3-8B snapshot requires ~15 GB. Verify quota before downloading.
 
 Following the steps in this tutorial gives you a reproducible SFT workflow on Frontier without relying on user-specific paths or live network connectivity during the batch job. Adjust hyperparameters in `sft_llama_ds.py` to experiment with longer runs, different datasets, or alternative LoRA settings.
->>>>>>> 72479f9 (commit)
